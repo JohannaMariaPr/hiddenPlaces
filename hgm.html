@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heeresgeschichtliches Museum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/compass-transparent.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="subpage.css">
+    <meta name="description" content="Discover Austria’s military past at the Heeresgeschichtliches Museum in Vienna, where historic weapons, uniforms, and exhibitions bring centuries of European warfare to life.">
 </head>
+
 <body>
+    <header class="hero">
+
+        <img src="images/hero-frontpage.png" alt="background image" class="hero-img">
+
+        <div class="header-menu">
+            <svg id="menu-btn" class="menu-btn" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                <path d="M29.75 14.1667H4.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M29.75 8.5H4.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M29.75 19.8333H4.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M29.75 25.5H4.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <div id="sidebar-menu" class="sidebar"> 
+            <div id="close-btn" class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M21 7L7 21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 7L21 21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <ul>
+                <li><a href="index.html" class="sidebar-link active">Homepage</a></li>
+                <li><a href="hgm.html" class="sidebar-link">Heeresgeschichtliches Museum</a></li>
+                <li><a href="prater.html" class="sidebar-link">Pratermuseum</a></li>
+                <li><a href="hdg.html" class="sidebar-link">Haus der Geschichte Österreich</a></li>
+                <li><a href="reviews.html" class="sidebar-link">Reviews</a></li>
+            </ul>
+        </div>
+        <script src="sidebar.js"></script>
+
+        <div class="hero-content">
+            <div class="hero-headline-subpage">
+                <h1>Heeresgeschichtliches</br>Museum</h1>
+            </div>
+            <div class="booking-box">
+                <a href="error.html" class="book-btn">Book now</a>
+                <div class="booking-box-content">
+                    <img src="images/clock.png" alt="Opening hours" class="icons">
+                    <p>Mon-Sun:</br>9 AM - 5 PM</p>
+                </div>
+                <div class="booking-box-content">
+                    <img src="images/coin.png" alt="Price" class="icons">
+                    <p>3.50€</p>
+                </div>
+                <div class="booking-box-content">
+                    <img src="images/compass.png" alt="Address" class="icons">
+                    <p>Arsenal 1,</br>1030 Vienna</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
     
 </body>
 </html>

@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/compass.png" type="image/x-icon">
+    <link rel="icon" href="images/compass-transparent.png" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="styleshee" href="frontpage.css">
     <meta name="description" content="Discover unforgettable experiences in these hidden historical museums in Vienna.">
 </head>
 
@@ -44,7 +45,7 @@
         </div>
         <script src="sidebar.js"></script>
 
-        <div class="hero-content">
+        <div class="hero-headline">
             <h1>Exploring Vienna's</br>Hidden Historical Museums</h1>
         </div>
 
@@ -53,7 +54,7 @@
     <main>
 
         <div class="intro">
-            <p>Vienna is a city rich with history, and we're excited to present 3 historical museums</br>that often fly under the radar but are absolutely worth a visit!</p>
+            <p>Vienna is a city rich with history, and we’re excited to present 3 historical museums</br>that often fly under the radar but are absolutely worth a visit!</p>
         </div>
 
         <div class="museum-container">
@@ -63,19 +64,64 @@
             <div class="card-content-container">
                 <h2>Heeresgeschichtliches Museum</h2>
                 <p>
-                    Austria's military past comes to life through weapons, uniforms, and gripping exhibits spanning centuries. 
-                    Discover the stories behind the nation's biggest conflicts. 
-                    A visit offers a vivid look at how war shaped Austria's identity.
+                    Austria’s military past comes to life through weapons, uniforms, and gripping exhibits spanning centuries. 
+                    Discover the stories behind the nation’s biggest conflicts. 
+                    A visit offers a vivid look at how war shaped Austria’s identity.
                 </p>
-                <button class="read-btn">Read more</button>
+                <a href="hgm.html" class="read-btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="museum-container">
+            <div class="card-content-container">
+                <h2>Pratermuseum</h2>
+                <p>
+                    Vienna’s famous Prater reveals a quirky, nostalgic side through vintage rides, curiosities, and stories from its 250-year history. 
+                    Step inside to discover how this beloved amusement park shaped the city’s culture and collective memories.
+                </p>
+                <a href="prater.html" class="read-btn">Read more</a>
+            </div>
+            <div class="card-img-container">
+                <img src="images/prater-museum.jpeg" alt="Prater teaser" class="card-img">
+            </div>
+        </div>
+
+        <div class="museum-container">
+            <div class="card-img-container">
+                <img src="images/hdg-eingang.jpeg" alt="HdG teaser" class="card-img">
+            </div>
+            <div class="card-content-container">
+                <h2>Haus der Geschichte Österreich</h2>
+                <p>
+                    Discover Austria’s modern history, where politics, society, and everyday life come together. 
+                    Interactive displays and personal perspectives bring key moments since 1918 to life. 
+                    It’s a place to question, reflect, and better understand Austria today.
+                </p>
+                <a href="hdg.html" class="read-btn">Read more</a>
             </div>
         </div>
  
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="footer-left">
+            <svg
+                viewBox="0 0 400 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+            >
+                <polygon points="0,0 380,0 340,100 0,100" />
+            </svg> <!-- blue background polygon -->
 
-    </footer>
+            <h2>Historical Museums Vienna</h2>
+        </div>
+
+        <div class="footer-right">
+            <p>Have you been to one of these museums? Tell us about your experience!</p>
+            <a href="reviews.html" class="review-btn">Write your own review</a>
+        </div>
+
+</footer>
 
 </body>
 </html>
