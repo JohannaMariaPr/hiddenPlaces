@@ -1,3 +1,5 @@
+/* TYPOGRAPHY */
+
 p {
     font-size: 20px;
     line-height: 1.5;
@@ -24,10 +26,15 @@ h2 {
 /* HEADER */
 
 .hero {
-    position: relative;   /* enables stacking elements */
+    position: relative;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     height: 80vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-subpage {
@@ -51,13 +58,13 @@ h2 {
 }
 
 .hero-headline {
-    position: relative;   /* keeps it above background image */
+    position: relative;   
     z-index: 2;
     height: 100%;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
 }
 
 .hero-headline h1 {
@@ -67,20 +74,29 @@ h2 {
 .hero-headline-subpage {
     position: relative;
     z-index: 2;
+    max-width: 1200px;
 }
 
-.hero-headline-suppage h1 {
-    text-align: center;
+.hero-headline-subpage h1 {
+    text-align: left;
     margin: 0;
+    z-index: 1;
 }
 
 .hero-content {
+    z-index: 2;
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 40px;
+}
+
+.hero-content-inner {
+    max-width: 1200px;   
+    margin: 0 auto;      /* centers it */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    z-index: 2;
-    padding: 40px;
 }
 
 .booking-box {
@@ -210,6 +226,9 @@ h2 {
 
 .footer {
     display: flex;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     background: white;
     border-top: solid 1px #457E9C;
     box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.12);
@@ -266,4 +285,106 @@ h2 {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.51);
+}
+
+
+@media (max-width: 900px) {
+     /* Typography */
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    /* Stack footer vertically */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    /* Hide left and right texts */
+    .footer-left h2,
+    .footer-right p {
+        display: none;
+    }
+
+    /* Remove padding and width issues */
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        padding: 0;
+        justify-content: center; /* center child content */
+        display: flex;           /* ensure flex layout still applies */
+    }
+
+    /* Center the button */
+    .review-btn {
+        margin: 0 auto;      /* horizontal centering */
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .hero, .hero-subpage {
+        height: 60vh;
+    }
+    
+
+.hero-headline {
+        align-items: flex-start;
+        margin-top: 80px;
+    }
+    .hero-subpage {
+        height: auto; /* let it grow depending on content */
+        justify-content: flex-start; /* stack content at top */
+        padding: 20px 0;
+    }
+
+    /* Hero content inner: stack vertically and center */
+    .hero-content-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* space between headline and booking box */
+        padding: 0 20px;
+    }
+
+    /* Headline: center and scale down */
+    .hero-headline-subpage h1 {
+        text-align: center;
+        font-size: 30px; /* smaller on mobile */
+        line-height: 1.2;
+    }
+
+    /* Booking box: full width and centered */
+    .booking-box {
+        padding: 20px;
+        align-items: left; 
+        gap: 10px;
+    }
+    .booking-box-content {
+        padding-right: 0;
+        gap: 10px;
+    }
+
+    .booking-box-content p {
+        font-size: 12px;
+        margin-top: 5px;
+
+    }
+
+    .icons {
+        width: 50px; /* smaller icons */
+        margin-bottom: 5px;
+    }
+
+    .book-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
 }

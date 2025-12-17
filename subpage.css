@@ -1,10 +1,10 @@
-/* SUBPAGES */
 html, body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   max-width: 100%;
   background-color: white;
-  }
+  overflow-x: hidden;
+}
 
 main {
   max-width: 100%;
@@ -74,17 +74,17 @@ main {
 }
 
 .read-btn{
-    background-color: #457E9C;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    border: none;
-    padding: 10px 20px;
-    max-width: 150px;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.51);
+  background-color: #457E9C;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  padding: 10px 20px;
+  max-width: 150px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.51);
 }
 
 .reviews-container {
@@ -118,7 +118,7 @@ main {
 }
 
 
-/* Slideshow container */
+/* Slideshow */
 
 .slideshow-container {
   flex: 1 1 0;     /* forces equal width */
@@ -172,7 +172,7 @@ main {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -190,8 +190,66 @@ main {
   to {opacity: 1}
 }
 
+
 @media (max-width: 900px) {
-  .museum-card {
+  
+  .museum-card,
+  .highlight-card {
     flex-direction: column;
+    align-items: center;   /* center children */
+    padding: 0 20px;       /* consistent horizontal spacing */
+    gap: 20px;
+  }
+
+  .card-text-container,
+  .card-img-container {
+    padding: 0;            /* remove extra padding to fit screen */
+    width: 100%;
+  }
+  .slideshow-container {
+    flex: 1 1 auto;          
+    width: 100%;
+    max-height: 300px;       
+    padding: 0px;         
+  }
+
+  .mySlides img {
+    height: 100%;
+    object-fit: cover;       /* still crops nicely */
+  }
+
+  /* Adjust prev/next buttons for mobile */
+  .prev, .next {
+    top: 45%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .numbertext {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .map-wrapper {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 300px;     /* smaller for mobile */
+    padding: 0 20px;   /* reduced padding */
+    margin-bottom: 20px;
+  }
+
+  .map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .read-btn {
+    font-size: 12px;
+    padding: 8px 12px;
   }
 }
