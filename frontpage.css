@@ -89,12 +89,13 @@ main {
         flex-direction: column;
     }
 
+    /* Change the order of the elements in prater card, to have consistent design in mobile version */
     .museum-container-prater .card-content-container {
-        order: 1;
+        order: 0;
     }
 
     .museum-container-prater .card-img-container {
-        order: 2;
+        order: -1;
     }
 
     /* Reduce spacing so it doesn’t feel huge on mobile */

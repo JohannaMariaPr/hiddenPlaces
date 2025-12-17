@@ -9,3 +9,5 @@ const closeBtn = document.getElementById('close-btn');
 closeBtn.addEventListener('click', () => {
     sidebarMenu.classList.remove('active');
 });
+
+

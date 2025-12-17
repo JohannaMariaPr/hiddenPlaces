@@ -208,8 +208,8 @@ main {
   .museum-card,
   .highlight-card {
     flex-direction: column;
-    align-items: center;   /* center children */
-    padding: 0 20px;       /* consistent horizontal spacing */
+    align-items: stretch;   
+    padding: 0 20px;       
     gap: 20px;
   }
 
@@ -217,6 +217,7 @@ main {
   .card-img-container {
     padding: 0;            /* remove extra padding to fit screen */
     width: 100%;
+    margin: 0;
   }
   .slideshow-container {
     flex: 1 1 auto;          
